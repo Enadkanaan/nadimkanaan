@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nadim Kanan, PhD | Energy Storage Executive</title>
+  <meta name="description" content="VP of Energy Storage at BrightNight Power. 16+ years across renewable energy, battery storage, system design, performance, and project execution."/>
+  <meta name="keywords" content="energy storage, BESS, battery storage, renewable energy, solar-plus-storage, Nadim Kanan"/>
+  <meta property="og:title" content="Nadim Kanan, PhD | Energy Storage Executive"/>
+  <meta property="og:description" content="VP of Energy Storage at BrightNight Power. Expert in BESS design, procurement, analytics, and renewable infrastructure."/>
+  <meta property="og:type" content="website"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ══ NAV ══════════════════════════════════════════════════════════════════ -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <button class="nav-logo" onclick="scrollTo('hero')">
+      <div class="nav-logo-icon">
+        <svg viewBox="0 0 24 24" fill="white" width="16" height="16"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+      </div>
+      <div>
+        <div class="nav-logo-name">Nadim Kanan</div>
+        <div class="nav-logo-sub">PhD · Energy Storage</div>
+      </div>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="#about"      class="nav-link">About</a>
+      <a href="#expertise"  class="nav-link">Expertise</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#contact"    class="nav-link">Contact</a>
+    </div>
+    <a href="https://www.linkedin.com/in/nkanan" target="_blank" rel="noopener noreferrer" class="nav-cta">
+      <svg viewBox="0 0 24 24" fill="white" width="13" height="13"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+      LinkedIn
+    </a>
+    <button class="nav-mobile-btn" id="mobileBtn" onclick="toggleMobile()" aria-label="Toggle menu">
+      <svg id="menuIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile drawer -->
+<div class="mobile-overlay" id="mobileOverlay" onclick="toggleMobile()"></div>
+<div class="mobile-drawer" id="mobileDrawer">
+  <a href="#about"      class="mobile-link" onclick="toggleMobile()">About</a>
+  <a href="#expertise"  class="mobile-link" onclick="toggleMobile()">Expertise</a>
+  <a href="#experience" class="mobile-link" onclick="toggleMobile()">Experience</a>
+  <a href="#contact"    class="mobile-link" onclick="toggleMobile()">Contact</a>
+  <a href="https://www.linkedin.com/in/nkanan" target="_blank" rel="noopener noreferrer" class="mobile-cta">
+    <svg viewBox="0 0 24 24" fill="white" width="15" height="15"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+    Connect on LinkedIn
+  </a>
+</div>
+
+<!-- ══ HERO ══════════════════════════════════════════════════════════════════ -->
+<section class="hero" id="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-inner">
+    <!-- Left: text -->
+    <div class="hero-text fade-up">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-line"></span>
+        Energy Storage · Renewable Infrastructure · Power Systems
+      </div>
+      <h1 class="hero-h1">Building the storage systems behind the next generation of <em>reliable clean energy.</em></h1>
+      <p class="hero-sub">Nadim Kanan, PhD is VP of Energy Storage at BrightNight Power — a recognized innovator with 17 patents, leading battery systems engineering, procurement strategy, and portfolio optimization across the clean energy transition.</p>
+      <div class="hero-btns">
+        <a href="https://www.linkedin.com/in/nkanan" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          <svg viewBox="0 0 24 24" fill="white" width="14" height="14"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          Connect on LinkedIn
+        </a>
+        <a href="#contact" class="btn-outline">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4M9 5a3 3 0 016 0"/></svg>
+          Invite Nadim to Speak
+        </a>
+      </div>
+    </div>
+    <!-- Right: headshot -->
+    <div class="hero-photo-wrap fade-in-delay">
+      <div class="hero-accent-line"></div>
+      <div class="hero-photo-frame">
+        <img src="nadim.jpg" alt="Nadim Kanan, PhD" class="hero-photo"/>
+        <div class="hero-photo-gradient"></div>
+      </div>
+      <div class="hero-chip">
+        <div class="chip-item"><div class="chip-val">17</div><div class="chip-lbl">Patents</div></div>
+        <div class="chip-div"></div>
+        <div class="chip-item"><div class="chip-val">PhD</div><div class="chip-lbl">UConn EE</div></div>
+        <div class="chip-div"></div>
+        <div class="chip-item"><div class="chip-val">16+</div><div class="chip-lbl">Yrs Exp</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ ABOUT ═════════════════════════════════════════════════════════════════ -->
+<section class="section-light" id="about">
+  <div class="section-inner reveal">
+    <div class="about-grid">
+      <div class="about-body">
+        <div class="section-label">About</div>
+        <h2 class="section-h2">Leader in power and energy systems</h2>
+        <p>Nadim Kanan, PhD is VP of Energy Storage at BrightNight Power with 15+ years of experience advancing renewable energy and energy storage. He brings a proven track record in driving large-scale innovation, guiding cross-functional teams, and delivering strategies that optimize performance, reduce costs, and accelerate the clean energy transition.</p>
+        <p>He leads initiatives in battery systems engineering, procurement strategy, and portfolio optimization, while also serving as a subject matter expert in renewable energy M&amp;A. His work has enabled organizations to evaluate emerging technologies, execute high-value partnerships, and deliver sustainable solutions with measurable ROI.</p>
+        <p>A recognized innovator with 17 patents, Nadim is passionate about shaping the future of energy by aligning technical excellence with business strategy to unlock growth and long-term value.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-card-role">VP, Energy Storage</div>
+        <div class="about-card-company">BRIGHTNIGHT POWER · DALLAS–FORT WORTH</div>
+        <div class="divider"></div>
+        <div class="card-sublabel">Top Skills</div>
+        <div class="skills-wrap">
+          <span class="skill-tag">Energy Storage</span><span class="skill-tag">BESS Engineering</span>
+          <span class="skill-tag">Renewable Energy</span><span class="skill-tag">Data Science</span>
+          <span class="skill-tag">Procurement</span><span class="skill-tag">M&amp;A Due Diligence</span>
+          <span class="skill-tag">Performance Analytics</span><span class="skill-tag">Power Systems</span>
+        </div>
+        <div class="divider"></div>
+        <div class="card-sublabel">Education</div>
+        <div class="card-degree">PhD, Electrical Engineering</div>
+        <div class="card-school">University of Connecticut</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ EXPERTISE ═════════════════════════════════════════════════════════════ -->
+<section class="section-dark" id="expertise">
+  <div class="section-inner reveal">
+    <div class="section-label light">Expertise</div>
+    <h2 class="section-h2 light">Core areas of technical leadership</h2>
+    <div class="expertise-grid">
+      <div class="exp-card">
+        <div class="exp-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#4a9edd" stroke-width="1.7" width="19" height="19"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+        </div>
+        <div class="exp-title">BESS Engineering &amp; Design</div>
+        <div class="exp-desc">End-to-end battery energy storage system design, sizing, performance modeling, and technical specification for utility-scale projects.</div>
+      </div>
+      <div class="exp-card">
+        <div class="exp-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#4a9edd" stroke-width="1.7" width="19" height="19"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 12h6M9 16h4"/></svg>
+        </div>
+        <div class="exp-title">Procurement &amp; Offtake</div>
+        <div class="exp-desc">Battery procurement strategy, supplier qualification, contract negotiation, and offtake agreement structuring for large-scale storage assets.</div>
+      </div>
+      <div class="exp-card">
+        <div class="exp-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#4a9edd" stroke-width="1.7" width="19" height="19"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div class="exp-title">Performance Analytics</div>
+        <div class="exp-desc">Portfolio-level analytics, digital twins, degradation modeling, and ML-driven prediction tools for storage performance and capacity forecasting.</div>
+      </div>
+      <div class="exp-card">
+        <div class="exp-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#4a9edd" stroke-width="1.7" width="19" height="19"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <div class="exp-title">M&amp;A Due Diligence</div>
+        <div class="exp-desc">BESS subject matter expert for renewable energy M&amp;A transactions — technology vetting, operational assumptions, and performance guarantees.</div>
+      </div>
+      <div class="exp-card">
+        <div class="exp-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#4a9edd" stroke-width="1.7" width="19" height="19"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+        </div>
+        <div class="exp-title">AI &amp; Load Growth</div>
+        <div class="exp-desc">Storage solutions for AI data centers and high-load environments — engineered for flexibility, resilience, and grid-scale reliability.</div>
+      </div>
+      <div class="exp-card">
+        <div class="exp-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#4a9edd" stroke-width="1.7" width="19" height="19"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+        </div>
+        <div class="exp-title">Hybrid &amp; Microgrid Systems</div>
+        <div class="exp-desc">Solar-plus-storage integration, microgrid architecture, inverter sizing, reactive power compensation, and islanding detection.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ EXPERIENCE ════════════════════════════════════════════════════════════ -->
+<section class="section-white" id="experience">
+  <div class="section-inner reveal">
+    <div class="section-label">Experience</div>
+    <h2 class="section-h2">Career timeline</h2>
+    <div class="timeline-cols">
+      <!-- Left column -->
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot primary"></div>
+          <div class="tl-company">BrightNight Power</div>
+          <div class="tl-role">VP, Energy Storage</div>
+          <div class="tl-date">SEP 2024 – PRESENT · UNITED STATES</div>
+          <div class="tl-desc">Leading the BESS Engineering and Storage procurement vertical, overseeing all energy storage related transactions.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot primary"></div>
+          <div class="tl-company">Avantus</div>
+          <div class="tl-role">Sr. Director, Energy Storage Engineering</div>
+          <div class="tl-date">SEP 2023 – SEP 2024 · SAN FRANCISCO BAY AREA</div>
+          <div class="tl-desc">Led multidisciplinary team overseeing BESS procurement, offtake, M&amp;A, portfolio analytics, and operational tools.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot secondary"></div>
+          <div class="tl-role muted">Director, Energy Storage Engineering</div>
+          <div class="tl-date">AUG 2020 – SEP 2023 · SAN FRANCISCO BAY AREA</div>
+          <div class="tl-desc">Battery systems engineering, cost optimization, procurement contracts, BESS M&amp;A SME, and battery product qualification program.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot primary"></div>
+          <div class="tl-company">NEC Energy Solutions</div>
+          <div class="tl-role">Director, Energy Storage System Analytics</div>
+          <div class="tl-date">FEB 2015 – AUG 2020 · WESTBOROUGH, MA</div>
+          <div class="tl-desc">Led data science, digital twins, adaptive performance warranties, and BESS design for front/back-of-meter grid applications.</div>
+        </div>
+      </div>
+      <!-- Right column -->
+      <div>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-dot primary"></div>
+            <div class="tl-company">SunEdison</div>
+            <div class="tl-role">Microgrid Solutions Development</div>
+            <div class="tl-date">2014 · UNITED STATES</div>
+            <div class="tl-desc">Developed optimal storage sizing tools and microgrid simulation models for peak demand shaving applications.</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot primary"></div>
+            <div class="tl-company">California ISO</div>
+            <div class="tl-role">Power Systems Engineering</div>
+            <div class="tl-date">2013 · CALIFORNIA</div>
+            <div class="tl-desc">Day-ahead market testing, solar forecasting tools, and ramping capacity prediction system requirements.</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot primary"></div>
+            <div class="tl-company">Masdar Institute / MIT</div>
+            <div class="tl-role">Research Engineer, MicroGrid Control</div>
+            <div class="tl-date">SEP 2009 – JUL 2011 · ABU DHABI</div>
+            <div class="tl-desc">Control and stability of inverter-based distributed generation and microgrids in collaboration with MIT.</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot primary"></div>
+            <div class="tl-company">ABB</div>
+            <div class="tl-role">Bid and Proposals Engineer</div>
+            <div class="tl-date">AUG 2008 – SEP 2009</div>
+            <div class="tl-desc">Technical and financial bids for electrical power system substation tenders across international markets.</div>
+          </div>
+        </div>
+        <!-- Education -->
+        <div class="edu-block">
+          <div class="edu-title">Education</div>
+          <div class="edu-item">
+            <div class="edu-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#1769AA" stroke-width="1.8" width="16" height="16"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <div>
+              <div class="edu-degree">Doctor of Philosophy — Electrical Engineering</div>
+              <div class="edu-school">UNIVERSITY OF CONNECTICUT · 2011–2015</div>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#1769AA" stroke-width="1.8" width="16" height="16"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <div>
+              <div class="edu-degree">MSc, Engineering Systems &amp; Management</div>
+              <div class="edu-school">KHALIFA UNIVERSITY / MIT · 2009–2011</div>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#1769AA" stroke-width="1.8" width="16" height="16"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <div>
+              <div class="edu-degree">BSc, Electrical Power Systems Engineering</div>
+              <div class="edu-school">YARMOUK UNIVERSITY · 2003–2008</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ INNOVATION ════════════════════════════════════════════════════════════ -->
+<section class="section-darkest" id="innovation">
+  <div class="section-inner reveal">
+    <div class="patents-grid">
+      <div>
+        <div class="section-label light">Innovation</div>
+        <div class="patents-metric">17</div>
+        <div class="patents-label">Registered Patents</div>
+        <p class="patents-desc">Nadim holds 17 patents spanning battery pre-cooling systems, state-of-charge control, power distribution optimization, and reconfigurable phase-change thermal devices — representing a decade of applied innovation in energy storage technology.</p>
+      </div>
+      <div>
+        <div class="section-label light">Recognition</div>
+        <div class="awards-list">
+          <div class="award-chip">
+            <div class="award-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#4a9edd" stroke-width="2" width="15" height="15"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+            </div>
+            <div><div class="award-name">8minute Innovator Award</div><div class="award-org">8MINUTE SOLAR ENERGY</div></div>
+          </div>
+          <div class="award-chip">
+            <div class="award-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#4a9edd" stroke-width="2" width="15" height="15"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <div><div class="award-name">The Bolty Award</div><div class="award-org">NEC ENERGY SOLUTIONS</div></div>
+          </div>
+          <div class="award-chip">
+            <div class="award-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#4a9edd" stroke-width="2" width="15" height="15"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <div><div class="award-name">President Award for Academic Distinction</div><div class="award-org">UNIVERSITY OF CONNECTICUT</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACT ═══════════════════════════════════════════════════════════════ -->
+<section class="section-dark" id="contact">
+  <div class="section-inner reveal">
+    <div class="section-label light">Contact</div>
+    <h2 class="section-h2 light">Let's connect.</h2>
+    <div class="contact-grid">
+      <!-- Left -->
+      <div class="contact-left">
+        <p class="contact-intro">For professional inquiries, collaboration, media, and advisory conversations — connect with Nadim directly on LinkedIn or send a message below.</p>
+        <div class="speaking-callout">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#4a9edd" stroke-width="2" width="18" height="18" style="flex-shrink:0;margin-top:1px"><path d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4M9 5a3 3 0 016 0"/></svg>
+          <p><strong>Speaking opportunities:</strong> Nadim is available for conference panels, keynotes, technical sessions, and executive briefings. Reach out to discuss speaking engagements.</p>
+        </div>
+        <a href="https://www.linkedin.com/in/nkanan" target="_blank" rel="noopener noreferrer" class="linkedin-btn">
+          <svg viewBox="0 0 24 24" fill="white" width="15" height="15"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          Connect on LinkedIn
+        </a>
+      </div>
+      <!-- Right: form -->
+      <div class="contact-form-wrap">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Name</label>
+            <input class="form-input" type="text" placeholder="Your name"/>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Organization</label>
+            <input class="form-input" type="text" placeholder="Company"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email</label>
+          <input class="form-input" type="email" placeholder="your@email.com"/>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Inquiry Type</label>
+          <select class="form-select">
+            <option value="">Select type</option>
+            <option>Speaking Opportunity</option>
+            <option>Media / Interview</option>
+            <option>Advisory</option>
+            <option>Industry Collaboration</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Message</label>
+          <textarea class="form-textarea" rows="4" placeholder="Tell us about your event, project, or inquiry..."></textarea>
+        </div>
+        <button class="form-submit" type="submit">Send Message →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ════════════════════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-name">Nadim Kanan, PhD · VP Energy Storage @ BrightNight</div>
+    <a href="https://www.linkedin.com/in/nkanan" target="_blank" rel="noopener noreferrer" class="footer-link">linkedin.com/in/nkanan</a>
+    <div class="footer-copy">© 2025 Nadim Kanan. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+  /* ── Sticky nav ── */
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 48) {
+      nav.style.borderBottom = '1px solid rgba(255,255,255,0.07)';
+      nav.style.boxShadow = '0 4px 24px rgba(0,0,0,0.35)';
+      nav.style.backgroundColor = 'rgba(10,20,34,0.97)';
+    } else {
+      nav.style.borderBottom = '1px solid transparent';
+      nav.style.boxShadow = 'none';
+      nav.style.backgroundColor = 'rgba(10,20,34,0.88)';
+    }
+  }, { passive: true });
+
+  /* ── Mobile menu ── */
+  let mobileOpen = false;
+  function toggleMobile() {
+    mobileOpen = !mobileOpen;
+    document.getElementById('mobileDrawer').style.transform = mobileOpen ? 'translateX(0)' : 'translateX(100%)';
+    document.getElementById('mobileOverlay').style.opacity = mobileOpen ? '1' : '0';
+    document.getElementById('mobileOverlay').style.pointerEvents = mobileOpen ? 'auto' : 'none';
+  }
+
+  /* ── Scroll reveal ── */
+  const reveals = document.querySelectorAll('.reveal');
+  const revealObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'translateY(0)';
+        revealObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  reveals.forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(22px)';
+    el.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
+    revealObs.observe(el);
+  });
+
+  /* ── Expertise card hover ── */
+  document.querySelectorAll('.exp-card').forEach(card => {
+    card.addEventListener('mouseenter', () => { card.style.borderColor = 'rgba(23,105,170,0.4)'; card.style.transform = 'translateY(-3px)'; });
+    card.addEventListener('mouseleave', () => { card.style.borderColor = 'rgba(255,255,255,0.07)'; card.style.transform = 'translateY(0)'; });
+  });
+</script>
+</body>
+</html>
